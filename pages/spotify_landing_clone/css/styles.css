@@ -1,0 +1,70 @@
+body {
+  background-color: #000000;
+}
+
+.l0-grid1-container {
+  display: grid;
+  grid-template-areas:
+    "menu main"
+    "footer footer";
+  grid-template-rows: auto 4rem;
+  grid-template-columns: 25rem auto;
+  height: 98vh;
+  gap: 9px;
+}
+
+.l1-grid1-container {
+  grid-area: menu;
+  display: grid;
+  grid-template-rows: 7.5rem auto;
+  grid-template-columns: auto;
+  background-color: rgb(0, 0, 0);
+  gap: 9px;
+}
+
+.l1-grid1-container > div {
+  background-color: rgb(18, 18, 18);
+  border-radius: 5px;
+}
+
+/* rgb(36, 36, 36)*/
+
+.l1-grid2-container {
+  grid-area: main;
+  background-color: rgb(18, 18, 18);
+  border-radius: 5px;
+}
+
+.l2-grid1-container ul li {
+  height: 3rem;
+  display: grid;
+  grid-template-columns: 3.5rem auto;
+  align-items: center;
+  color: white;
+  fill: white;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, sans-serif;
+}
+
+.l2-grid2-container ul li {
+  height: 3rem;
+  display: grid;
+  grid-template-columns: 3.5rem auto 1rem;
+  align-items: center;
+  color: white;
+  fill: white;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, sans-serif;
+}
+
+#library_plus {
+ justify-self: end;    
+}
+
+.footer {
+  grid-area: footer;
+}
